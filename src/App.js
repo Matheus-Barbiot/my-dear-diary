@@ -1,13 +1,23 @@
 import React from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './pages/home';
 import './App.css';
 
+
 function App() {
-  return (
-    <>
-    <h1>My Dear Diary</h1>
-    <p>Configurando arquivos do template.</p>
-    </>
-  );
+    const router = createBrowserRouter(
+      [
+        {
+          path:"/",
+          element:<Home />,
+        },
+      ]
+    )
+    return (
+        <>
+        <RouterProvider router={router} />
+        </>
+    );
 }
 
 export default App;
