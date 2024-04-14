@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'ballet-harmony';
+    src: url('./fonts/ballet_harmony/Ballet Harmony.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'roshida-valentines';
+    src: url('./fonts/roshida_valentines/Roshida Valentines.ttf') format('truetype');
+}
+
+:root {
+    --rosaClaro: #F4F1BB;
+    --rosaMedio: #EFBCD5;
+    --rosaEscuro: #BE97C6;
+    --azulClaro: #51A3A3;
+    --azulEscuro: #2F4858;
+}

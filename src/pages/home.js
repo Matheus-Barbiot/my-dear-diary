@@ -5,11 +5,11 @@ function Home(){
         <>
         <div id="home">
             <header>
-                <div>
+                <div id="row1">
                     <h1>My Dear Diary</h1>
                     <button>mais</button>
                 </div>
-                <div>
+                <div id="row2">
                     <p>My Dear Diary, o seu espaço seguro para expressar, refletir e crescer...</p>
                     <button>Login or sign up</button>
                 </div>
