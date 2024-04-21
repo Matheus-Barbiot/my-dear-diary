@@ -6,13 +6,14 @@ import './App.css';
 
 function App() {
     const router = createBrowserRouter(
-      [
-        {
-          path:"/",
-          element:<Home />,
-        },
-      ]
+        [
+            {
+                path: "/",
+                element: <Home />,
+            },
+        ]
     )
+    
     return (
         <>
         <RouterProvider router={router} />
