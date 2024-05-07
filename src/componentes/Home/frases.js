@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 
-export default function Main() {
+export default function Frases(){
     const frases = [
         "Comece sua jornada de auto-conhecimento aqui.",
         "Bem vindo, esta é a área do seu refúgio pessoal.",
@@ -16,20 +16,12 @@ export default function Main() {
 
         return () => clearInterval(interval);
     }, []);
-
+    
     return (
         <>
-            <div id="mainHome">
-                <div id="inicio">
-                    <p>My Dear Diary, o seu espaço seguro para expressar, refletir e crescer</p>
-                    <button>Login</button>
-                </div>
-                <div id="frases">
-                    <p className="frase" style={{ transition: 'opacity 0.5s ease-in-out' }}>
-                        {frases[fraseAtual]}
-                    </p>
-                </div>
-            </div>
+        <div className="frase" style={{ transition: 'opacity 0.5s ease-in-out' }}>
+            <p>{frases[fraseAtual]}</p>
+        </div>
         </>
-    );
+    )
 }

@@ -100,16 +100,14 @@
     animation: pulse 2s infinite alternate;
 }
 
-#frases {
-    display: flex;
-    flex-direction: row;
+#textos {
     justify-content: center;
     background-color: white;
     padding: 1em;
+    border-radius: 20px;
 }
 
-#frases .frase {
-    position: absolute;
+#textos .frase {
     background-color: white;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 300;
@@ -117,10 +115,12 @@
     width: 80vw;
     margin: auto;
     padding: 1em;
-    border-radius: 2em;
     text-align: center;
     font-size: 1.5em;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.313);
+}
+
+#textos #perguntas article {
+    background-color: red;
 }
 
 

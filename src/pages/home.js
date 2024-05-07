@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 import Menu from "../componentes/menu-lateral";
 import Header from "../componentes/header";
-import Main from "../componentes/main";
+import Main from "../componentes/Home/main";
+
 function Home(){
     const [menuLateral, menuState] = useState(false)
     function mostrarMenu(){
