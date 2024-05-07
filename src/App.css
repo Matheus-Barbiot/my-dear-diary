@@ -1,13 +1,3 @@
-@font-face {
-    font-family: 'ballet-harmony';
-    src: url('./fonts/ballet_harmony/Ballet Harmony.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'roshida-valentines';
-    src: url('./fonts/roshida_valentines/Roshida Valentines.ttf') format('truetype');
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
@@ -17,7 +7,7 @@
     --rosaEscuro: #BE97C6;
     --azulClaro: #51a3a3;
     --azulEscuro: #2F4858;
-    --escuroTransparente: #00000089;
+    --escuroTransparente: #0000005b;
 }
 * {
     padding: 0;
@@ -32,13 +22,13 @@
     background-attachment: fixed;
 }
 
-#header {
+header {
     background-color: var(--escuroTransparente);
     width: 100vw;
     height: 100px;
 }
 
-#header > a {
+header > a {
     position: absolute;
     top: 0;
     background-image: url(images/backgrounds/titulo-mydeardiary.png);
@@ -50,7 +40,7 @@
     cursor: pointer;
 }
 
-#header > button {
+header > button {
     position: absolute;
     top: 0;
     right: 0;
@@ -65,8 +55,8 @@
     cursor: pointer;
 }
 
-#inicio {
-    background-color: var(--escuroTransparente);
+main#mainHome #inicio, main#mainHome #conclusao {
+    background-image: linear-gradient(var(--escuroTransparente), black);
     height: 450px;
     margin: 0;
     display: flex;
@@ -75,7 +65,12 @@
     align-items: center;
 }
 
-#inicio p {
+main#mainHome #conclusao {
+    background-image: linear-gradient(black 5%, var(--escuroTransparente), black);
+    height: 300px;
+}
+
+main#mainHome #inicio p, #conclusao p {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 100;
     width: 99vw;
@@ -84,10 +79,10 @@
     font-size: 2.8em;
 }
 
-#inicio button {
+main#mainHome #inicio button, #conclusao button {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-weight: bolder;
     color: white;
+    font-weight: bolder;
     margin-top: 2em;
     background-color: var(--azulEscuro);
     font-size: 1.8em;
@@ -100,15 +95,20 @@
     animation: pulse 2s infinite alternate;
 }
 
-#textos {
+.botaoLink {
+    text-decoration: None;
+    color: white;
+}
+
+main#mainHome #textos {
     justify-content: center;
     background-color: white;
+    outline: solid 1em black;
     padding: 1em;
     border-radius: 20px;
 }
 
-#textos .frase {
-    background-color: white;
+main#mainHome #textos .frase {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 300;
     height: 3em;
@@ -116,11 +116,30 @@
     margin: auto;
     padding: 1em;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
-#textos #perguntas article {
-    background-color: red;
+main#mainHome #perguntas {
+    font-family: 'Indie Flower', cursive;
+}
+
+article {
+    background-color: white;
+    margin: 4em 0;
+    padding: 20px;
+    border: solid 1px black;
+    border-radius: 20px;
+}
+
+article h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+article p {
+    line-height: 2em;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 
@@ -178,6 +197,30 @@ nav p#nome {
     font-weight: bolder;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
+
+footer {
+    background-color: black;
+    height: 100px;
+    color: white;
+    padding: 4em;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer a::after {
+    content: '↗';
+}
+
+ul {
+    padding-left: 1em;
+}
+  
 
 @keyframes pulse {
     0% {
