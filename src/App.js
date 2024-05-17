@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/home';
-import Contato from './pages/contato';
+import Diary from './pages/diary';
 import './App.css';
 
 
@@ -13,8 +13,8 @@ function App() {
                 element: <Home />,
             },
             {
-                path: "/contato",
-                element: <Contato />,
+                path: "/diary",
+                element: <Diary />,
             },
         ]
     )

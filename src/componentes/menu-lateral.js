@@ -10,7 +10,6 @@ export default function Menu(props) {
             <p id='nome'>Usuário</p>
             <p className="op"><Link className="link" to='/diary'>Meu diario</Link></p>
             <p className="op"><Link className="link" to='/'>Página inicial</Link></p>
-            <p className="op"><Link className="link" to='/contato'>Contato</Link></p>
         </nav>
         </>
     )
