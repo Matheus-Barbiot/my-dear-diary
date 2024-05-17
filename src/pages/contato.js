@@ -1,21 +1,20 @@
 import React, {useState} from "react";
 import Header from "../componentes/header";
-import Main from "../componentes/Home/main";
+import Aside from "../componentes/aside";
 import Footer from "../componentes/footer";
 import mostrarMenu from "../funcoes/mostrar-menu";
 
-function Home(){
+
+export default function Contato(){
     const [menuLateral, menuState] = useState(false)
-    return(
+    return (
         <>
-        <div id="home">
-            <Header menuState={menuState} />
-            <Main />
+        <div id="contato">
+            <Header menuState={menuState}></Header>
+            <Aside></Aside>
             {mostrarMenu(menuLateral, menuState)}
-            <Footer />
+            <Footer></Footer>
         </div>
         </>
     )
 }
-
-export default Home
