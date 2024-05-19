@@ -10,7 +10,7 @@ export default function Main() {
             <main id="mainHome">
                 <section id="inicio">
                     <p>My Dear Diary, o seu diario virtual para expressar, refletir e crescer</p>
-                    <button><Link className="botaoLink" to="/dear">escrever</Link></button>
+                    <button><Link className="botaoLink" to="/diary">escrever</Link></button>
                 </section>
                 <section id="textos">
                     <Frases />
